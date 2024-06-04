@@ -3,20 +3,13 @@
 
 const form = document.querySelector("#form")
 const submitButton = document.querySelector("#submit")
-const scriptURL = null
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwF2Lz3OEsQQuCQjZWXChTZaRvBjbvCMdQshgL4AOtxUuA2syjDxiyhNzEqAFgYCt4/exec'
 
-{% if site.enviroment == "development" %}
-    scriptURL = 'https://script.google.com/macros/s/AKfycbwF2Lz3OEsQQuCQjZWXChTZaRvBjbvCMdQshgL4AOtxUuA2syjDxiyhNzEqAFgYCt4/exec'
-    form["mode"].value = "dev"
-{% endif %}
-{% if site.enviroment == "production" %}
-    scriptURL = 'https://script.google.com/macros/s/AKfycbwZIVcNowvlsICxcawc9ZdgUWgOeZqfNJsEeWtGP50YNYl3nkvgkkNRFyeOPC9QTfo/exec'
-    form["mode"].value = "live"
-{% endif %}
+form["mode"].value = "dev"
 
 const errored_fields = []
 
-function validateForm (){        
+function validateForm (){       
     var first_name = form["first_name"];
     var email = form["email"];
     var email_pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;

@@ -250,4 +250,9 @@ permalink: /contact/
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="/assets/scripts/contact_form_sections.js"></script>
-<script src="/assets/scripts/submit_contact_form.js"></script>
+
+{% if site.environment == "production" %}
+    <script src="/assets/scripts/submit_contact_form_prod.js"></script>
+{% else if site.environment == "development" %}
+    <script src="/assets/scripts/submit_contact_form_dev.js"></script>
+{% endif %}
