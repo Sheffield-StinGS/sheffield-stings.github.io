@@ -8,7 +8,7 @@ const scriptURL = null
 {% if site.enviroment == "development" %}
     scriptURL = 'https://script.google.com/macros/s/AKfycbwF2Lz3OEsQQuCQjZWXChTZaRvBjbvCMdQshgL4AOtxUuA2syjDxiyhNzEqAFgYCt4/exec'
     form["mode"].value = "dev"
-{& endif %}
+{% endif %}
 {% if site.enviroment == "production" %}
     scriptURL = 'https://script.google.com/macros/s/AKfycbwZIVcNowvlsICxcawc9ZdgUWgOeZqfNJsEeWtGP50YNYl3nkvgkkNRFyeOPC9QTfo/exec'
     form["mode"].value = "live"
