@@ -13,6 +13,7 @@ permalink: /
             <p>
                 <b>Sheffield StinGS</b> is the SSAGO club located in Sheffield. To find out more information take a look at our <a href="/about/">About Us</a> page.
             </p>
+            <img src="{{site.baseurl}}/assets/img/Logos/Logo.png" class="mobile">
             <div class="gallery">
                 {% for image in site.static_files %}
                     {% if image.path contains '/assets/img/Home_Page/Gallery' %}
@@ -24,7 +25,7 @@ permalink: /
                 {% endfor %}
             </div>
         </div>
-        <img src="{{site.baseurl}}/assets/img/Logos/Logo.png">
+        <img src="{{site.baseurl}}/assets/img/Logos/Logo.png" class="desktop">
     </div>
 </div>
 

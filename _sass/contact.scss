@@ -22,6 +22,14 @@ label{
     grid-column: span 2;
 }
 
+select{
+    width: 100%;
+}
+
+input{
+    width: 100%;
+}
+
 .required{
     color: $stings_red;
     padding: 0px !important;

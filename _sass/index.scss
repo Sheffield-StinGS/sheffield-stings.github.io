@@ -25,3 +25,12 @@
     display: block;
     padding: 0px !important; 
 }
+
+@media screen and (max-width:600px) {
+    .gallery{
+        grid-template-columns: 1fr;
+    }
+    .outer{
+        grid-template-columns: 1fr;
+    }
+}

@@ -3,11 +3,15 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans); //The Offical SSAGO Font
 @import url(//fonts.googleapis.com/css?family=Nunito+Sans); // The Offical StinGS Font
 
+* {
+    box-sizing: border-box;
+  }
+
 html, body {
     background: $stings_black;
     margin: 0  ;
     padding: 0;
-    font-family: 'Nunito Sans' 'Open Sans', sans-serif;
+    font-family: 'Nunito Sans', 'Open Sans', sans-serif;
     color: $stings_black;
 }
 
@@ -64,20 +68,14 @@ html, body {
     gap: 10px;
 }
 
-// The below code deals with making any necessary changes when the website is viewed on mobile or smaller screens
-@media screen and (max-width:600px) {
-    .cols{
-        width: 98%;
-    }
-    .content{
-        width: 98%;
-        font-size: 14px;
-    }
-    .header_banner h1{
-        font-size: 32px;
+
+@media screen and (min-width:1025px) {
+    .mobile{
+        display: none;
     }
 }
 
+// The below code deals with making any necessary changes when the website is viewed on mobile or smaller screens
 @media screen and (max-width:1520px) {
     .header_banner h1{
         font-size: 70px;
@@ -90,17 +88,33 @@ html, body {
     }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1025px) {
     .content{
         font-size: 16px;
     }
     .header_banner h1{
         font-size: 46px;
     }
+    .desktop{
+        display: none;
+    }
 }
 
 @media screen and (max-width:850px) {
     .header_banner h1{
         font-size: 36px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .cols{
+        width: 98%;
+    }
+    .content{
+        width: 98%;
+        font-size: 20px;
+    }
+    .header_banner h1{
+        font-size: 40px;
     }
 }
