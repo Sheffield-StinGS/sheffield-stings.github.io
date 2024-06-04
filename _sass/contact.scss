@@ -1,0 +1,74 @@
+//This file contains all of the unique configuration for the Contact Us page
+
+.contact_form_box{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 10px;
+    padding: 10px;
+
+}
+
+p.form_explainer{
+    padding: 0 !important;
+}
+
+.form_field{
+    display: grid;
+    grid-template-columns: 1fr 6fr 6fr 1fr;
+    padding: 5px;
+}
+
+label{ 
+    grid-column: span 2;
+}
+
+.required{
+    color: $stings_red;
+    padding: 0px !important;
+    display: inline;
+}
+
+.response_error{
+    outline: 3px solid $stings_red;
+}
+
+.list_header{
+    grid-column: span 4;
+}
+
+.list_item{
+    grid-column: span 1;
+}
+
+input[type="radio"]{
+    transform: scale(1.25);
+    margin: auto;
+}
+
+input[type="checkbox"]{
+    transform: scale(1.25);
+    margin: auto;
+}
+
+.address_box{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.form_field textarea{
+    resize: vertical;
+    min-height: 50px;
+}
+
+.submit_button {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+}
+
+button[type="submit"]{
+    transform: scale(1.25);
+}

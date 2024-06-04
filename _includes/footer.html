@@ -1,0 +1,10 @@
+<footer class="bottom_bar">
+    <div class="social">
+        {% for item in site.data.social %}
+            <a href="{{item.link}}">
+                <img src="{{site.baseurl}}/assets/img/Footer/{{item.name}}_Logo.png" alt="{{item.name}}">
+            </a>
+        {% endfor %}
+    </div>
+    <a href="#top" class="back-to-top">Back to Top</a>
+</footer>

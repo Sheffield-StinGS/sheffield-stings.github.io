@@ -1,0 +1,253 @@
+---
+layout: default
+title: Contact Us
+permalink: /contact/
+---
+<div class="content">
+    <div class="header_banner">
+        <h1>Get in Touch</h1>
+    </div>
+    <p>If you are interested in becoming a member, are a university student in search of local volunteering opportunites or would like to contact us for any other reason then please fill out the form below. </p>
+    <div class="contact_form_box">
+        <form onload="hide_elements" id="form" name="contact_form">
+            <p class="form_explainer">Fields marked with a * are required</p>
+            <div class="form_field">
+                <label for="first_name">First name:</label>
+                <input type="text" id="first_name" name="first_name">
+                <p class="required">*</p>
+            </div>
+            <div class="form_field">
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname">
+            </div>
+            <div class="form_field">
+                <label for="Email">Email Address:</label>
+                <input type="email" id="email" name="Email">
+                <p class="required">*</p>
+            </div>
+            <div class="form_field">
+                <label for="purpose">Reason for Contact:</label>
+                <select id="purpose" name="purpose">
+                    <option value="" selected disabled hidden>Choose from this list</option>
+                    <option value="Membership">Membership Enquiry</option>
+                    <option value="Volunteering">Volunteering Oppourtunites</option>
+                    <option value="Other">Other</option>
+                </select>
+                <p class="required">*</p>
+            </div>
+            <div id="Membership" class="form_part">
+                <fieldset class="form_field">
+                    <legend class="list_header">Student Status:</legend>
+                    <p></p>
+                    <label for="september" class="list_item">Starting in September</label>    
+                    <input type="radio" name="Student Status" id="september" value="Starting in September">
+                    <p></p>
+                    <p></p>
+                    <label for="current" class="list_item">Current Student</label>
+                    <input type="radio" name="Student Status" id="current" value="Current Student">
+                    <p></p>
+                    <p></p>
+                    <label for="alumni" class="list_item">Alumni</label>
+                    <input type="radio" name="Student Status" id="alumni" value="Alumni">
+                    <p></p>
+                </fieldset>
+                <fieldset class="form_field" id="course_level">
+                    <legend class="list_header">Course Type:</legend>
+                    <p></p>
+                    <label for="postgrad" class="list_item">Postgraduate</label>
+                    <input type="radio" name="Course Type" id="postgrad" value="Postgraduate">
+                    <p></p>
+                    <p></p>
+                    <label for="undergrad" class="list_item">Undergraduate</label>
+                    <input type="radio" name="Course Type" id="undergrad" value="Undergraduate">
+                    <p></p>
+                </fieldset>
+                <fieldset class="form_field">
+                    <legend class="list_header">University:</legend>
+                    <p></p>
+                    <label for="hallum" class="list_item">Sheffield Hallum University</label>
+                    <input type="radio" name="University" id="hallum" value="Sheffield Hallum University">
+                    <p></p>
+                    <p></p>
+                    <label for="uni_of" class="list_item">University of Sheffield</label>
+                    <input type="radio" name="University" id="uni_of" value="University of Sheffield">
+                    <p></p>
+                </fieldset>
+            </div>
+            <div id="Volunteering" class="form_part">
+                <fieldset class="form_field">
+                    <legend class="list_header">Are you a member of:</legend>
+                    <p></p>
+                    <label for="scouts" class="list_item">Scouts</label>
+                    <input type="checkbox" name="scouts" id="scouts" value="Scouts" class="movement">
+                    <p></p>
+                    <p></p>
+                    <label for="guides" class="list_item">Guides</label>
+                    <input type="checkbox" name="guides" id="guides" value="Guides" class="movement">
+                    <p></p>
+                    <p></p>
+                    <label for="neither" class="list_item">Neither</label>
+                    <input type="radio" name="neither" id="neither" value="Neither" class="movement">
+                    <p></p>
+                </fieldset>
+                <fieldset class="form_field" id="volunteering_frequency">
+                    <legend class="list_header">What sort of volunteering are you after?<p class="required">*</p></legend>
+                    <p></p>
+                    <label for="regular" class="list_item">Regular e.g. Every week with a group</label>
+                    <input type="checkbox" name="regular_volunteering" id="regular" value="Regularly" class="volunteering_frequency">
+                    <p></p>
+                    <p></p>
+                    <label for="occasional" class="list_item">Occasional e.g. Big events now and then</label>
+                    <input type="checkbox" name="occasional_volunteering" id="occasional" value="Occasionally" class="volunteering_frequency">
+                    <p></p>
+                </fieldset>
+                <div id="Regularly" class="volunteering_part">
+                    <div class="form_field">
+                        <label for="postcode">Sheffield Postcode:</label>
+                        <input type="text" name="Postcode" id="postcode">
+                    </div>
+                    <fieldset class="form_field">
+                        <legend class="list_header">What section(s) would you be willing to help with?</legend>
+                        <p></p>
+                        <label for="squirrels" class="list_item">Squirrels (4-6)</label>
+                        <input type="checkbox" name="squirrel_section" id="Squirrels" value="Yes" class="section">
+                        <p></p>
+                        <p></p>
+                        <label for="beavers" class="list_item">Beavers (6-8)</label>
+                        <input type="checkbox" name="beaver_section" id="Beavers" value="Yes" class="section">
+                        <p></p>
+                        <p></p>
+                        <label for="cubs" class="list_item">Cubs (8-10&frac12)</label>
+                        <input type="checkbox" name="cub_section" id="Cubs" value="Yes" class="section">
+                        <p></p>
+                        <p></p>
+                        <label for="scouts" class="list_item">Scouts (10&frac12-14)</label>
+                        <input type="checkbox" name="scout_section" id="Scouts" value="Yes" class="section">
+                        <p></p>
+                        <p></p>
+                        <label for="explorers" class="list_item">Explorers (14-18)</label>
+                        <input type="checkbox" name="explorer_section" id="Explorers" value="Yes" class="section">
+                        <p></p>
+                        <p></p>
+                        <label for="rainbows" class="list_item">Rainbows (4-7)</label>
+                        <input type="checkbox" name="rainbow_section" id="Rainbows" value="Yes" class="section">
+                        <p></p>
+                        <p></p>
+                        <label for="brownies" class="list_item">Brownies (7-10)</label>
+                        <input type="checkbox" name="brownie_section" id="Brownies" value="Yes" class="section">
+                        <p></p>
+                        <p></p>
+                        <label for="guides" class="list_item">Guides (10-14)</label>
+                        <input type="checkbox" name="guide_section" id="Guides" value="Yes" class="section">
+                        <p></p>
+                        <p></p>
+                        <label for="rangers" class="list_item">Rangers (14-18)</label>
+                        <input type="checkbox" name="ranger_section" id="Rangers" value="Yes" class="section">
+                        <p></p>
+                    </fieldset>
+                    <div class="form_field">
+                        <label for="preferred_section">Preferred Section:</label>
+                        <select id="preferred_section" name="Preferred Section">
+                            <option value="" selected disabled hidden></option>
+                            <option value="Squirrels" name="Squirrels" disabled hidden>Squirrels</option>
+                            <option value="Beavers" name="Beavers" hidden disabled>Beavers</option>
+                            <option value="Cubs" name="Cubs" hidden disabled>Cubs</option>
+                            <option value="Scouts" name="Scouts" hidden disabled>Scouts</option>
+                            <option value="Explorers" name="Explorers" hidden disabled>Explorers</option>
+                            <option value="Rainbows" name="Rainbows" hidden disabled>Rainbows</option>
+                            <option value="Brownies" name="Brownies" hidden disabled>Brownies</option>
+                            <option value="Guides" name="Guides" hidden disabled>Guides</option>
+                            <option value="Rangers" name="Rangers" hidden disabled>Rangers</option>
+                            <option value="No Preference" name="none">No Preference</option>
+                            <option value="N/A" name="N/A">N/A</option>
+                        </select>
+                    </div>
+                    <fieldset id="form_field">
+                        <legend class="list_header">Which evening(s) are you available?</legend>
+                        <p></p>
+                        <label for="monday" class="list_item">Monday</label>
+                        <input type="checkbox" name="mon_day" id="Monday" value="Yes" class="day">
+                        <p></p>
+                        <p></p>
+                        <label for="tuesday" class="list_item">Tuesday</label>
+                        <input type="checkbox" name="tue_day" id="Tuesday" value="Yes" class="day">
+                        <p></p>
+                        <p></p>
+                        <label for="wednesday" class="list_item">Wednesday</label>
+                        <input type="checkbox" name="wed_day" id="Wednesday" value="Yes" class="day">
+                        <p></p>
+                        <p></p>
+                        <label for="thursday" class="list_item">Thursday</label>
+                        <input type="checkbox" name="thu_day" id="Thursday" value="Yes" class="day">
+                        <p></p>
+                        <p></p>
+                        <label for="friday" class="list_item">Friday</label>
+                        <input type="checkbox" name="fri_day" id="Friday" value="Yes" class="day">
+                        <p></p>
+                        <p></p>
+                        <label for="saturday" class="list_item">Saturday</label>
+                        <input type="checkbox" name="sat_day" id="Saturday" value="Yes" class="day">
+                        <p></p>
+                        <p></p>
+                        <label for="sunday" class="list_item">Sunday</label>
+                        <input type="checkbox" name="sun_day" id="Sunday" value="Yes" class="day">
+                        <p></p>
+                    </fieldset>
+                    <div class="form_field">
+                        <label for="preferred_day">Preferred Evening:</label>
+                        <select id="preferred_day" name="Preferred Day">
+                            <option value="" selected disabled hidden></option>
+                            <option value="Monday" name="Monday" disabled hidden>Monday</option>
+                            <option value="Tuesday" name="Tuesday" hidden disabled>Tuesday</option>
+                            <option value="Wednesday" name="Wednesday" hidden disabled>Wednesday</option>
+                            <option value="Thursday" name="Thursday" hidden disabled>Thursday</option>
+                            <option value="Friday" name="Friday" hidden disabled>Friday</option>
+                            <option value="Saturday" name="Saturday" hidden disabled>Saturday</option>
+                            <option value="Sunday" name="Sunday" hidden disabled>Sunday</option>
+                            <option value="No Preference" name="none">No Preference</option>
+                            <option value="N/A" name="N/A">N/A</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form_field">
+                    <label for="experience" >Do you have any relevant experience or qualifications?</label>
+                    <textarea name="Experience" id="experience" rows="4" cols="50" placeholder="Please detail them here..."></textarea>
+                </div>
+                <legend class="form_field">
+                    <label class="list_header">Do you have a current DBS?</label>
+                    <p></p>
+                    <label for="DBS_Yes_Scouts" class="list_item">Yes (Scouts)</label>
+                    <input type="checkbox" name="scouts_DBS" id="DBS_Yes_Scouts" value="Yes" class="DBS">
+                    <p></p>
+                    <p></p>
+                    <label for="DBS_Yes_Guides" class="list_item">Yes (Guides)</label>
+                    <input type="checkbox" name="guides_DBS" id="DBS_Yes_Guides" value="Yes" class="DBS">
+                    <p></p>
+                    <p></p>
+                    <label for="DBS_Yes_Other" class="list_item">Yes (Other)</label>
+                    <input type="checkbox" name="other_DBS" id="DBS_Yes_Other" value="Yes" class="DBS">
+                    <p></p>
+                    <p></p>
+                    <label for="DBS_No" class="list_item">No</label>
+                    <input type="radio" name="no_DBS" id="DBS_No" value="No" class="DBS">
+                    <p></p>
+                </legend>
+            </div>
+            <div class="form_field">
+                <label for="Message">Is there anything else you would like to add?</label>
+                <textarea name="Message" id="message" rows="4" cols="50" placeholder="Please enter further information here..."></textarea>
+            </div>
+            <input style="display: none;" name="mode" id="mode">
+            <div class="submit_button">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+        <div class="image_box">
+
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="/assets/scripts/contact_form_sections.js"></script>
+<script src="/assets/scripts/submit_contact_form.js"></script>

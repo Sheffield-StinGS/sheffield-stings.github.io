@@ -1,0 +1,46 @@
+---
+layout: default
+title: Home
+permalink: /
+---
+
+<div class="content">
+    <div class="header_banner">
+        <h1>Welcome!</h1>
+    </div>
+    <div class="outer">
+        <div>
+            <p>
+                <b>Sheffield StinGS</b> is the SSAGO club located in Sheffield. To find out more information take a look at our <a href="/about/">About Us</a> page.
+            </p>
+            <div class="gallery">
+                {% for image in site.static_files %}
+                    {% if image.path contains '/assets/img/Home_Page/Gallery' %}
+                        <div class="gallery_item">    
+                            <img src="{{ image.path }}">
+                            <p class="gallery_caption">{{image.basename}}</p>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <img src="{{site.baseurl}}/assets/img/Logos/Logo.png">
+    </div>
+</div>
+
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("carousel-slide");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+    }
+</script>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title | append: " | Sheffield StinGS" }} </title>
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/styles.css">
+    <link rel="icon" href="/assets/img/Logos/Browser_Icon.png" type="image">
+  </head>
+  <body>
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
+  </body>
+</html>

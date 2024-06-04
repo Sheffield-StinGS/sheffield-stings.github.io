@@ -1,0 +1,106 @@
+//This is the file that does all of the formating that is intended to be implemented across all pages.
+
+@import url(//fonts.googleapis.com/css?family=Open+Sans); //The Offical SSAGO Font
+@import url(//fonts.googleapis.com/css?family=Nunito+Sans); // The Offical StinGS Font
+
+html, body {
+    background: $stings_black;
+    margin: 0  ;
+    padding: 0;
+    font-family: 'Nunito Sans' 'Open Sans', sans-serif;
+    color: $stings_black;
+}
+
+.header_banner {
+    background: $stings_gold;
+    color: $stings_light_black;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.header_banner h1{
+    margin: 0;
+    padding: auto;
+    font-size: 84px;
+}
+
+.content {
+    background: $stings_light_gray;
+    margin: auto;
+    width: 75%;
+    font-size: 26px;
+}
+
+.content p {
+    padding: 10px;
+    margin: 0;
+}
+
+.content a {
+    color: $stings_near_white;
+}
+
+.half {
+    height: 100%;
+    width: 100%;
+}
+
+.half .header_banner {
+    margin-top: 0;
+}
+
+.half .content{
+    height: 100%;
+}
+
+.cols{
+    width: 75%;
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+    gap: 10px;
+}
+
+// The below code deals with making any necessary changes when the website is viewed on mobile or smaller screens
+@media screen and (max-width:600px) {
+    .cols{
+        width: 98%;
+    }
+    .content{
+        width: 98%;
+        font-size: 14px;
+    }
+    .header_banner h1{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width:1520px) {
+    .header_banner h1{
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .header_banner h1{
+        font-size: 54px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .content{
+        font-size: 16px;
+    }
+    .header_banner h1{
+        font-size: 46px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .header_banner h1{
+        font-size: 36px;
+    }
+}

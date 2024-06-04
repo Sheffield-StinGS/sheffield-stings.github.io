@@ -1,0 +1,27 @@
+
+
+.outer{
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+}
+
+.outer img{
+    width: 98%;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.gallery_item{
+    display: block;
+}
+
+.gallery_caption{
+    font-size: 10px;
+    display: block;
+    padding: 0px !important; 
+}

@@ -1,0 +1,31 @@
+//This file contains all the configuration that is unique to the footer.html file
+
+.bottom_bar {
+    background-color: $stings_dark_gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    margin-top: 10px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 10px;
+}
+
+.bottom_bar a{
+    color: $stings_near_white;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social img{
+    width: 48px;
+}
+
+.back-to-top{
+    text-align: center;
+}
+

@@ -1,0 +1,15 @@
+<script src="/assets/scripts/expand_nav_bar.js"></script>
+
+<nav class="topnav" id="nav_bar">
+    <div class="small_logo_box">
+        <img src="{{site.baseurl}}/assets/img/Logos/Small_Silhouette.png">
+    </div>
+    {% for item in site.data.navigation %}
+        <a href="{{item.link}}" {% if page.url == item.link %}class="current"{% endif %}>
+            {{item.name}}
+        </a>
+    {% endfor %}
+    <a href="javascript:void(0);" class="icon" onclick="expand_top_nav()">
+        <i><b>&equiv;</b></i>
+    </a>
+</nav>
