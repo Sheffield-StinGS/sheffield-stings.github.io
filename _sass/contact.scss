@@ -58,13 +58,6 @@ input[type="checkbox"]{
     margin: auto;
 }
 
-.address_box{
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    gap: 10px;
-    padding: 10px;
-}
-
 .form_field textarea{
     resize: vertical;
     min-height: 50px;
@@ -79,4 +72,10 @@ input[type="checkbox"]{
 
 button[type="submit"]{
     transform: scale(1.25);
+}
+
+@media screen and (max-width:600px) {
+    .contact_form_box{
+        grid-template-columns: 1fr;
+    }
 }
