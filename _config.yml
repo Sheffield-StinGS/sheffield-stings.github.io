@@ -22,6 +22,8 @@ url: sheffield-stings.github.io
 permalink: /:categories/:year/:month/:day/:title:output_ext
 
 environment: production
+form_url: https://script.google.com/macros/s/AKfycbwZIVcNowvlsICxcawc9ZdgUWgOeZqfNJsEeWtGP50YNYl3nkvgkkNRFyeOPC9QTfo/exec
+form_mode: live
 
 # Exclude from processing.
 # The following items will not be processed, by default.
